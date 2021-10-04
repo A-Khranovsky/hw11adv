@@ -43,31 +43,7 @@ use \Hillel\Models\Post;
 //    ];
 //}
 //Post::insert($posts);
-//
-//$posts = Post::all();
-//$tags = Tag::all();
-//foreach ($posts as $post) {
-//    $tagsIds = $tags->pluck('id')->random(3);
-//    $post->tags()->sync($tagsIds);
-//}
 
-//$data = Post::find(1);
-//foreach($data->tags as $d) {
-//    echo $d->title;
-//}
-//var_dump($data->tags()->pluck('id')->toArray());
-$post = Post::where('category_id','=',1)->get();
-//    ->get();
-//var_dump($post->title);
-$p = $post->pluck('body')->toArray();
-foreach($p as $t) {
-    echo $t;
-}
-//$game = Game::where('id',1)->with('platforms')->get();
 
-//$categories = Category::table('categories')
-//    ->leftJoin('posts', 'category.id', '=', 'id')
-//    ->get();
-
-///** @var $blade \Illuminate\View\Factory */
-//echo $blade->make('categories.index', ['categories' => $categories])->render();
+/** @var $blade \Illuminate\View\Factory */
+echo $blade->make('pages.home', ['title' => 'Sandbox DB'])->render();

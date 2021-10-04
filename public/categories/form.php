@@ -25,9 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 if (!empty($_GET['id'])) {
     $data['category'] = \Hillel\Models\Category::find($_GET['id']);
-    $post = \Hillel\Models\Post::where('category_id',1)->get();
-    $selected_posts = \Hillel\Models\Post::where('category_id','=',$_GET['id'])->get();
-    $data['selected_posts'] = $selected_posts->pluck('id')->toArray();
 }
 
 $data['posts'] = \Hillel\Models\Post::All();
