@@ -28,9 +28,6 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="/tags">Tags</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/">Exit</a>
-                            </li>
                         </ul>
                     </div>
                 </div>

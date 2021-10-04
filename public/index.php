@@ -51,8 +51,6 @@ use \Hillel\Models\Post;
 //    $post->tags()->sync($tagsIds);
 //}
 
-
-//
-
+$categories = Category::all();
 /** @var $blade \Illuminate\View\Factory */
-echo $blade->make('pages.home', [])->render();
+echo $blade->make('categories.index', ['categories' => $categories])->render();
