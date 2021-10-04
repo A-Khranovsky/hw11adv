@@ -51,6 +51,20 @@ use \Hillel\Models\Post;
 //    $post->tags()->sync($tagsIds);
 //}
 
-$categories = Category::all();
-/** @var $blade \Illuminate\View\Factory */
-echo $blade->make('categories.index', ['categories' => $categories])->render();
+//$data = Post::find(1);
+//foreach($data->tags as $d) {
+//    echo $d->title;
+//}
+//var_dump($data->tags()->pluck('id')->toArray());
+//$post = Post::where('id',1)->leftJoin('post_tags', 'posts.id', '=', 'post_tags.post_id')->get();
+//    ->get();
+//var_dump($post);
+//echo $post;
+//$game = Game::where('id',1)->with('platforms')->get();
+
+//$categories = Category::table('categories')
+//    ->leftJoin('posts', 'category.id', '=', 'id')
+//    ->get();
+
+///** @var $blade \Illuminate\View\Factory */
+//echo $blade->make('categories.index', ['categories' => $categories])->render();
