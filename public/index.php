@@ -8,6 +8,7 @@ use \Hillel\Models\Category;
 use \Hillel\Models\Tag;
 use \Hillel\Models\Post;
 
+//To fill DB uncomment under
 //$categories = [];
 //for($i =1 ; $i <=5; $i++) {
 //    $categories[] = [
