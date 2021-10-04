@@ -56,10 +56,13 @@ use \Hillel\Models\Post;
 //    echo $d->title;
 //}
 //var_dump($data->tags()->pluck('id')->toArray());
-//$post = Post::where('id',1)->leftJoin('post_tags', 'posts.id', '=', 'post_tags.post_id')->get();
+$post = Post::where('category_id','=',1)->get();
 //    ->get();
-//var_dump($post);
-//echo $post;
+//var_dump($post->title);
+$p = $post->pluck('body')->toArray();
+foreach($p as $t) {
+    echo $t;
+}
 //$game = Game::where('id',1)->with('platforms')->get();
 
 //$categories = Category::table('categories')

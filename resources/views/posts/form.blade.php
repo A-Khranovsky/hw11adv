@@ -29,8 +29,8 @@
         </select>
         </div>
         <div class="mb-3">
-            <label for="select1" class="form-label">Tags</label>
-            <select name="Tags[]" class="form-select" id="select1" multiple aria-label="multiple select example">
+            <label for="select2" class="form-label">Tags</label>
+            <select name="Tags[]" class="form-select" id="select2" multiple aria-label="multiple select example">
                 @foreach($tags as $tag)
                     @if(in_array($tag->id, $tags_selected))
                         <option selected value="{{$tag->id}}">{{$tag->title}}</option>
